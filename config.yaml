@@ -1,5 +1,5 @@
 # directory or S3 bucket + prefix where created reports are stored.
-output_dir: s3://bmonreporter-data.energytools.com/reports-test
+output_dir: s3://bmonreporter-data.energytools.com/reports
 
 # a list or iterable containing the base BMON Server URLs that should be 
 # processed for creating reports.  e.g. ['https://bms.ahfc.us', 'https://bmon.analysisnorth.com']
