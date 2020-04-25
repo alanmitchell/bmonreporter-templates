@@ -17,3 +17,9 @@ templates.  The requirements for a similar repo are:
 
 A reasonable approach is to fork this repo and then modify the configuration file and Jupyter notebooks
 to suit your needs.  New notebooks can be added and unneeded notebooks can be deleted as required.
+
+## Notes about creating Jupyter Notebook Templates
+
+* After refining and testing a Notebook, using the "Cell, All Output, Clear" menu option will remove all graphs
+  and output from the Notebook, substantially reducing it's size.  Be sure to save the Notebook after
+  executing the command.
