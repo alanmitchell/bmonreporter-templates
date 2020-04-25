@@ -23,3 +23,12 @@ to suit your needs.  New notebooks can be added and unneeded notebooks can be de
 * After refining and testing a Notebook, using the "Cell, All Output, Clear" menu option will remove all graphs
   and output from the Notebook, substantially reducing it's size.  Be sure to save the Notebook after
   executing the command.
+* If you want a report template to only be applied to certain buildings or organizations, you
+  can do a test on the `building_id` or `org_id` in the cell following the Parameter cell.  Raise
+  an error if you do not want to proceed further with report creation.  For example, the code below
+  ensures that the report will only be applied to buildings 23 and 44:
+
+```python
+if building_id not in (23, 44):
+    raise RuntimeError('Not Applicable')
+```
