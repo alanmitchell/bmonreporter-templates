@@ -1,11 +1,14 @@
-# directory or S3 bucket + prefix where created reports are stored.
+# Directory or AWS S3 bucket + prefix where created reports are stored.
+# The machine running bmonreporter must have write access to this S3 bucket.
 output_dir: s3://bmonreporter-data.energytools.com/reports
 
-# a list or iterable containing the base BMON Server URLs that should be 
-# processed for creating reports.  e.g. ['https://bms.ahfc.us', 'https://bmon.analysisnorth.com']
+# A list or iterable containing the base BMON Server URLs that should be 
+# processed for creating reports.  e.g. ['https://bms.ahfc.us', 'https://bmon.analysisnorth.com'].
+# The reports will be run for all of the servers in this list.
 bmon_urls: 
   - https://bms.ahfc.us
 #  - https://bmon.analysisnorth.com
 
-# The jupyter themes command to execute before creating the reports
+# The Jupyter Themes command to execute before creating the reports, which will control how
+# the reports will be formatted.
 jup_theme_cmd: jt -t grade3 -cellw 95% -lineh 150 -fs 105 -nfs 120 -tfs 130 -dfs 100 -ofs 100

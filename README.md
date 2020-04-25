@@ -1,2 +1,19 @@
 # bmonreporter-templates
-Holds Jupyter Noteboook report templates for the bmonreporter application.
+
+This repository holds Jupyter Notebook templates and configuration information that is
+used by the [bmonreporter](https://github.com/alanmitchell/bmonreporter) application.
+The Jupyter Notebooks are found in the 'templates' directory and the 
+[`config.yaml` configuration file](https://github.com/alanmitchell/bmonreporter-templates/blob/master/config.yaml)
+that controls which BMON servers that are processed, the AWS S3 bucket where the final reports
+are placed, and the format of the reports is found in the root of this repository.
+
+This repository serves as an example for creating other repositories holding Jupyter report
+templates.  The requirements for a similar repo are:
+
+* a `config.yaml` file in the root of the repo.
+* a `templates` directory, and within that directory a `building` and an `organization`
+  subdirectory, each holding Jupyter Notebooks that produce the reports.  The notebooks have
+  no naming requirements.
+
+A reasonable approach is to fork this repo and then modify the configuration file and Jupyter notebooks
+to suit your needs.  New notebooks can be added and unneeded notebooks can be deleted as required.
