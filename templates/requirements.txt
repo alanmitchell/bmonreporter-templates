@@ -1,0 +1,15 @@
+jupyterthemes>=0.20.0
+wheel
+bmonreporter
+bmondata
+requests
+pandas<2
+numpy
+markdown
+matplotlib==3.1.1
+nbconvert
+plotly<5
+ipython
+python-dateutil
+jupyter
+notebook
