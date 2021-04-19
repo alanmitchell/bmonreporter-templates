@@ -6,7 +6,7 @@ requests
 pandas<2
 numpy
 markdown
-matplotlib==3.1.1
+matplotlib<4
 nbconvert
 plotly<5
 ipython
